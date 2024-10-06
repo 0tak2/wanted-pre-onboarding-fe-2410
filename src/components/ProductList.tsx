@@ -2,11 +2,11 @@ import { ProductData } from "../api/products";
 import ProductCard from "./ProductCard";
 import ProductTotalPriceIndicator from "./ProductTotalPriceIndicator";
 
-function ProductList(props: {productData: ProductData[] }) {
+function ProductList({productData}: {productData: ProductData[] }) {
   return <>
-    <ProductTotalPriceIndicator productData={props.productData} />
+    <ProductTotalPriceIndicator productData={productData} />
     <div>
-      {props.productData.map((product, index) => <ProductCard productInfo={product} key={index} />)}
+      {productData.map((product, index) => <ProductCard productInfo={product} key={index} />)}
     </div>
   </>
 }
