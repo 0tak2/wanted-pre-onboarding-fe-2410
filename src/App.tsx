@@ -1,9 +1,10 @@
 import './App.css'
+import ProductView from './pages/ProductView'
 
 function App() {
   return (
     <>
-      Hello, World
+      <ProductView />
     </>
   )
 }
