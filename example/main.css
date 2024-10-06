@@ -1,0 +1,10 @@
+#scrollArea {
+    height: 300px;
+    border: 0.2rem solid blue;
+    overflow: auto;
+}
+
+.scrollItem {
+    height: 50px;
+    border: 0.2rem solid red;
+}
